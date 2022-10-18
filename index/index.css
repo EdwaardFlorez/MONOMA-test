@@ -1,0 +1,156 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* grid principal con el cual centramos nuestro main */
+.index_layout {
+  display: flex;
+  justify-content: center;
+}
+
+.index_header {
+  padding-top: 15px;
+}
+
+.header_icon {
+  width: 12%;
+}
+
+@media (max-width: 600px) {
+  .index_header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header_icon {
+    width: 35%;
+  }
+}
+
+.index_content {
+  width: clamp(350px, 90vw, 1600px);
+  display: flex;
+  flex-direction: column;
+  /* background-color: aquamarine; */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.cls-1{
+  fill: #838383;
+}
+
+.index_list {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 40vw));
+}
+
+li {
+  display: flex;
+  justify-content: center;
+}
+
+
+.index_list_card {
+  width: 35vw;
+  min-width: 350px;
+}
+
+
+
+.index_list_card_img {
+  width: 100%;
+}
+
+.info_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon_container {
+  display: flex;
+  align-items: center;
+}
+
+.icon_area,
+.icon_bed,
+.icon_bath {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #797979;
+  font-weight: bold;
+  font-size: x-small;
+}
+
+.index_card_button .cls-1 {
+  fill: #fff;
+}
+
+.index_card_button .cls-2 {
+  fill: none;
+  stroke: #ff5000;
+}
+
+.index_card_button .cls-3,
+.cls-4 {
+  isolation: isolate;
+}
+
+.index_card_button .cls-4 {
+  font-size: 11px;
+  fill: #ff5000;
+  font-family: Montserrat-Bold, Montserrat;
+  font-weight: 700;
+}
+
+.card_name {
+  color: #ff5000;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.card_price {
+  /*  font-weight: bold; */
+  font-weight: 900;
+  font-size: x-large;
+  color: #797979;
+}
+
+.card_location {
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #838383;
+}
+
+.index_card_button .cls-5 {
+  letter-spacing: -0.01em;
+}
+
+.index_card_button .cls-6 {
+  letter-spacing: 0em;
+}
+
+/* button */
+
+.btn-34 {
+  background-color: rgb(255, 255, 255);
+  color: #ff5000;
+  cursor: pointer;
+  font-size: 100%;
+  font-weight: 900;
+  border: 0 solid;
+  box-sizing: border-box;
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.5rem 2rem;
+  position: relative;
+}
+
+.btn-34:hover {
+  transform: scale(1.1);
+}
